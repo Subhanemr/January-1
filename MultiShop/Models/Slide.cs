@@ -1,8 +1,9 @@
-﻿namespace MultiShop.Models
+﻿using MultiShop.Models.Common;
+
+namespace MultiShop.Models
 {
-    public class Slide
+    public class Slide : BaseEntity
     {
-        public int Id { get; set; }
         public string Title { get; set; } = null!;
         public string SubTitle { get; set; } = null!;
         public string ButtonText { get; set; } = "Shop Now";

@@ -1,10 +1,10 @@
-﻿namespace MultiShop.Models
+﻿using MultiShop.Models.Common;
+
+namespace MultiShop.Models
 {
-    public class Category
+    public class Category : BaseNameEntity
     {
-        public int Id { get; set; }
-        public string Name { get; set; } = null!;
-        public string Img { get; set; }
+        public string Img { get; set; } = null!;
         public ICollection<Product>? Products { get; set; }
     }
 }

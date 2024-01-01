@@ -1,8 +1,9 @@
-﻿namespace MultiShop.Models
+﻿using MultiShop.Models.Common;
+
+namespace MultiShop.Models
 {
-    public class Settings
+    public class Settings : BaseEntity
     {
-        public int Id { get; set; }
         public string Key { get; set; } = null!;
         public string Value { get; set; } = null!;
     }

@@ -1,9 +1,9 @@
-﻿namespace MultiShop.Models
+﻿using MultiShop.Models.Common;
+
+namespace MultiShop.Models
 {
-    public class Color
+    public class Color : BaseNameEntity
     {
-        public int Id { get; set; }
-        public string Name { get; set; } = null!;
         public ICollection<ProductColor>? ProductColors { get; set; }
     }
 }

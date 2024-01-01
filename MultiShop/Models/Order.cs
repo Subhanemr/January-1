@@ -1,8 +1,9 @@
-﻿namespace MultiShop.Models
+﻿using MultiShop.Models.Common;
+
+namespace MultiShop.Models
 {
-    public class Order
+    public class Order : BaseEntity
     {
-        public int Id { get; set; }
         public bool? Status { get; set; }
         public string Address { get; set; } = null!;
         public decimal TotalPrice { get; set; }

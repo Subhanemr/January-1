@@ -1,8 +1,9 @@
-﻿namespace MultiShop.Models
+﻿using MultiShop.Models.Common;
+
+namespace MultiShop.Models
 {
-    public class BasketItem
+    public class BasketItem : BaseEntity
     {
-        public int Id { get; set; }
         public decimal Price { get; set; }
         public int Count { get; set; }
         public string AppUserId { get; set; } = null!;
