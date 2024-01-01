@@ -1,0 +1,225 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\css\\style.min.css",
+      "PackagePath": "staticwebassets\\css\\style.min.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\carousel-1.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\carousel-2.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\carousel-3.jpg",
+      "PackagePath": "staticwebassets\\img\\carousel-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\cat-1.jpg",
+      "PackagePath": "staticwebassets\\img\\cat-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\cat-2.jpg",
+      "PackagePath": "staticwebassets\\img\\cat-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\cat-3.jpg",
+      "PackagePath": "staticwebassets\\img\\cat-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\cat-4.jpg",
+      "PackagePath": "staticwebassets\\img\\cat-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\offer-1.jpg",
+      "PackagePath": "staticwebassets\\img\\offer-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\offer-2.jpg",
+      "PackagePath": "staticwebassets\\img\\offer-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\payments.png",
+      "PackagePath": "staticwebassets\\img\\payments.png"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\product-1.jpg",
+      "PackagePath": "staticwebassets\\img\\product-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\product-2.jpg",
+      "PackagePath": "staticwebassets\\img\\product-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\product-3.jpg",
+      "PackagePath": "staticwebassets\\img\\product-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\product-4.jpg",
+      "PackagePath": "staticwebassets\\img\\product-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\product-5.jpg",
+      "PackagePath": "staticwebassets\\img\\product-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\product-6.jpg",
+      "PackagePath": "staticwebassets\\img\\product-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\product-7.jpg",
+      "PackagePath": "staticwebassets\\img\\product-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\product-8.jpg",
+      "PackagePath": "staticwebassets\\img\\product-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\product-9.jpg",
+      "PackagePath": "staticwebassets\\img\\product-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\img\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\vendor-1.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\vendor-2.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\vendor-3.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\vendor-4.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\vendor-5.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\vendor-6.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\vendor-7.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\vendor-8.jpg",
+      "PackagePath": "staticwebassets\\img\\vendor-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\animate\\animate.min.css",
+      "PackagePath": "staticwebassets\\lib\\animate\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MultiShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MultiShop.props",
+      "PackagePath": "build\\MultiShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MultiShop.props",
+      "PackagePath": "buildMultiTargeting\\MultiShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MultiShop.props",
+      "PackagePath": "buildTransitive\\MultiShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
