@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lt/ysyK+c/efu0ItSUbPp/BNc2+6JQMcDp3dStxYaOs=",
+  "Hash": "NJGyBBEju98ySRo1uwNqRs7kfgm2TTHRYjsJilvJQnU=",
   "Source": "MultiShop",
   "BasePath": "_content/MultiShop",
   "Mode": "Default",
@@ -1834,6 +1834,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\default-profile.png"
+    },
+    {
+      "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\Exception.png",
+      "SourceId": "MultiShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\",
+      "BasePath": "_content/MultiShop",
+      "RelativePath": "img/Exception.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Exception.png"
     },
     {
       "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\offer-1.jpg",

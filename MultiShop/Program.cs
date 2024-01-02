@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MultiShop.DAL;
 using MultiShop.Interfaces;
+using MultiShop.Middlewares;
 using MultiShop.Models;
 using MultiShop.Services;
 using System.Reflection;
@@ -50,6 +51,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseStaticFiles();
 
+app.UseMiddleware<GlobalExceptionMiddleware>();
 app.MapControllerRoute("default",
     "{area:exists}/{controller=home}/{action=index}/{id?}");
 
