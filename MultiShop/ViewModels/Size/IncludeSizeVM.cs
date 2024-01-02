@@ -1,4 +1,8 @@
 ﻿namespace MultiShop.ViewModels
 {
-    public record IncludeSizeVM(int id, string Name);
+    public class IncludeSizeVM
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
 }

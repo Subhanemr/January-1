@@ -1,4 +1,8 @@
 ﻿namespace MultiShop.ViewModels
 {
-    public record SettingsVM(string Key, string Value);
+    public class SettingsVM
+    {
+        public string Key { get; set; }
+        public string Value { get; set; }
+    }
 }
