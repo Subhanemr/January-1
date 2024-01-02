@@ -16,8 +16,72 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\T x\Desktop\MultiShop\MultiShop
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Areas/MultiShopAdmin/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXVsdGlTaG9wQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Areas/MultiShopAdmin/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXVsdGlTaG9wQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Areas/MultiShopAdmin/Views/Color/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXVsdGlTaG9wQWRtaW5cVmlld3NcQ29sb3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Areas/MultiShopAdmin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXVsdGlTaG9wQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Areas/MultiShopAdmin/Views/Settings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXVsdGlTaG9wQWRtaW5cVmlld3NcU2V0dGluZ3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Areas/MultiShopAdmin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXVsdGlTaG9wQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Areas/MultiShopAdmin/Views/Slide/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXVsdGlTaG9wQWRtaW5cVmlld3NcU2xpZGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Areas/MultiShopAdmin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXVsdGlTaG9wQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Areas/MultiShopAdmin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTXVsdGlTaG9wQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Views/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Views/Account/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Views/Account/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Views/Account/SuccessfullyRegistred.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTdWNjZXNzZnVsbHlSZWdpc3RyZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/T x/Desktop/MultiShop/MultiShop/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Views/Shared/Components/Footer/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRm9vdGVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/T x/Desktop/MultiShop/MultiShop/Views/Shared/Components/Header/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZGVyXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/T x/Desktop/MultiShop/MultiShop/Views/Shared/_Layout.cshtml]

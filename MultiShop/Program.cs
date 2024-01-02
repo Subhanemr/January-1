@@ -1,31 +1,49 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MultiShop.DAL;
+using MultiShop.Interfaces;
 using MultiShop.Models;
+using MultiShop.Services;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(opt => { opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")); });
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<AppDbContextInitializer>();
 
-builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 {
-    opt.Password.RequiredLength = 8;
-    opt.Password.RequireNonAlphanumeric = true;
-    opt.Password.RequireDigit = true;
-    opt.Password.RequireLowercase = true;
-    opt.Password.RequireUppercase = true;
+    options.Password.RequiredLength = 8;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireDigit = true;
 
-    opt.User.RequireUniqueEmail = true;
+    options.User.RequireUniqueEmail = true;
 
-    opt.Lockout.MaxFailedAccessAttempts = 5;
-    opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+    options.Lockout.MaxFailedAccessAttempts = 5;
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
 
-    opt.SignIn.RequireConfirmedEmail = true;
-}).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+    options.SignIn.RequireConfirmedEmail = true;
+}
+
+).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var initializer = scope.ServiceProvider.GetRequiredService<AppDbContextInitializer>();
+    initializer.InitializeDbContext().Wait();
+    initializer.CreateUserRoles().Wait();
+    initializer.InitializeAdmin().Wait();
+}
+
 
 app.UseRouting();
 app.UseAuthentication();

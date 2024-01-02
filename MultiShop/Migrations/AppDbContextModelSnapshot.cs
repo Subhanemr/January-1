@@ -273,7 +273,7 @@ namespace MultiShop.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("BasketItems");
+                    b.ToTable("BasketItems", (string)null);
                 });
 
             modelBuilder.Entity("MultiShop.Models.Category", b =>
@@ -311,7 +311,7 @@ namespace MultiShop.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("MultiShop.Models.Color", b =>
@@ -345,7 +345,7 @@ namespace MultiShop.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Colors");
+                    b.ToTable("Colors", (string)null);
                 });
 
             modelBuilder.Entity("MultiShop.Models.Order", b =>
@@ -390,7 +390,7 @@ namespace MultiShop.Migrations
 
                     b.HasIndex("AppUserId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("MultiShop.Models.Product", b =>
@@ -440,7 +440,7 @@ namespace MultiShop.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("MultiShop.Models.ProductColor", b =>
@@ -476,7 +476,7 @@ namespace MultiShop.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductColors");
+                    b.ToTable("ProductColors", (string)null);
                 });
 
             modelBuilder.Entity("MultiShop.Models.ProductImages", b =>
@@ -514,7 +514,7 @@ namespace MultiShop.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImages");
+                    b.ToTable("ProductImages", (string)null);
                 });
 
             modelBuilder.Entity("MultiShop.Models.ProductSize", b =>
@@ -550,7 +550,7 @@ namespace MultiShop.Migrations
 
                     b.HasIndex("SizeId");
 
-                    b.ToTable("ProductSizes");
+                    b.ToTable("ProductSizes", (string)null);
                 });
 
             modelBuilder.Entity("MultiShop.Models.Settings", b =>
@@ -584,7 +584,7 @@ namespace MultiShop.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Settings");
+                    b.ToTable("Settings", (string)null);
                 });
 
             modelBuilder.Entity("MultiShop.Models.Size", b =>
@@ -618,7 +618,7 @@ namespace MultiShop.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Sizes");
+                    b.ToTable("Sizes", (string)null);
                 });
 
             modelBuilder.Entity("MultiShop.Models.Slide", b =>
@@ -663,7 +663,7 @@ namespace MultiShop.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Slides");
+                    b.ToTable("Slides", (string)null);
                 });
 
             modelBuilder.Entity("MultiShop.Models.AppUser", b =>

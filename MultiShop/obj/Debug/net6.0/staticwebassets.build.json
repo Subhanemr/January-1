@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zz8J0l/tmoL8t+sF8/OnefytOXlDW5q/OYyz4Mla36E=",
+  "Hash": "Lt/ysyK+c/efu0ItSUbPp/BNc2+6JQMcDp3dStxYaOs=",
   "Source": "MultiShop",
   "BasePath": "_content/MultiShop",
   "Mode": "Default",
@@ -1054,6 +1054,23 @@
       "OriginalItemSpec": "wwwroot\\admin\\images\\logo-mini.svg"
     },
     {
+      "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\admin\\images\\LogoN.png",
+      "SourceId": "MultiShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\",
+      "BasePath": "_content/MultiShop",
+      "RelativePath": "admin/images/LogoN.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\images\\LogoN.png"
+    },
+    {
       "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\admin\\js\\.DS_Store",
       "SourceId": "MultiShop",
       "SourceType": "Discovered",
@@ -1664,6 +1681,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\628a27ad-57bd-460a-9a14-d890f84cb81b.jpg",
+      "SourceId": "MultiShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\",
+      "BasePath": "_content/MultiShop",
+      "RelativePath": "img/628a27ad-57bd-460a-9a14-d890f84cb81b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\628a27ad-57bd-460a-9a14-d890f84cb81b.jpg"
     },
     {
       "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\carousel-1.jpg",
@@ -2412,6 +2446,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\mail\\contact.js",
+      "SourceId": "MultiShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\",
+      "BasePath": "_content/MultiShop",
+      "RelativePath": "mail/contact.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mail\\contact.js"
+    },
+    {
+      "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\mail\\contact.php",
+      "SourceId": "MultiShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\",
+      "BasePath": "_content/MultiShop",
+      "RelativePath": "mail/contact.php",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mail\\contact.php"
+    },
+    {
+      "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\mail\\jqBootstrapValidation.min.js",
+      "SourceId": "MultiShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\",
+      "BasePath": "_content/MultiShop",
+      "RelativePath": "mail/jqBootstrapValidation.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\mail\\jqBootstrapValidation.min.js"
     }
   ]
 }

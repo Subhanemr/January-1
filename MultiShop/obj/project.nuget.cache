@@ -1,13 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "38S9FpCwgIhdxztSLDi6lNSj+iqKlQHcHKTJE6pyvVT6jsLOScrBw2mosQxvBSrOJ0GVsgyE0meNsrVWQAThvQ==",
+  "dgSpecHash": "4JUFFLsmNUoHEqGFgtOcXCLmhaJ1IIlVAi6wlqlQfZdXrEzX8LSpufSoXhu96M/zRHeSiS39RuTl3/zvNUoP6g==",
   "success": true,
   "projectFilePath": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\MultiShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\T x\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\T x\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
-    "C:\\Users\\T x\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
-    "C:\\Users\\T x\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "C:\\Users\\T x\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\T x\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\T x\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

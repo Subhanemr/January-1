@@ -1,12 +1,50 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MultiShop.DAL;
+using MultiShop.Models;
+using MultiShop.ViewModels;
+
 
 namespace MultiShop.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly IMapper _mapper;
+        private readonly AppDbContext _context;
+
+        public HomeController(AppDbContext context, IMapper mapper)
         {
-            return View();
+            _context = context;
+            _mapper = mapper;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            ICollection<Product> products = await _context.Products
+                .Include(p => p.ProductImages.Where(pi => pi.IsPrimary != null)).OrderByDescending(s => s.OrderId).Take(8)
+                .ToListAsync();
+
+            ICollection<Settings> settings = await _context.Settings.ToListAsync();
+            
+            ICollection<Slide> slides = await _context.Slides.OrderBy(s => s.Id).Take(3).ToListAsync();
+
+            ICollection<ProductVM> productVMs = _mapper.Map<ICollection<ProductVM>>(products);
+            ICollection<SlideVM> slideVMs = _mapper.Map<ICollection<SlideVM>>(slides);
+            ICollection<SettingsVM> settingsVMs = _mapper.Map<ICollection<SettingsVM>>(settings);
+
+            HomeVM vm = new HomeVM { Slides = slideVMs, Products = productVMs, Settings = settingsVMs };
+
+            return View(vm);
+        }
+
+        public IActionResult ErrorPage(string error)
+        {
+            if (error == null)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            return View(model: error);
         }
     }
 }

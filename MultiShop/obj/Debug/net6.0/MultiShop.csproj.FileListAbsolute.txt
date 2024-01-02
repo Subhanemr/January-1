@@ -221,8 +221,6 @@ C:\Users\T x\Desktop\MultiShop\MultiShop\obj\Debug\net6.0\MultiShop.genruntimeco
 C:\Users\T x\Desktop\MultiShop\MultiShop\obj\Debug\net6.0\ref\MultiShop.dll
 C:\Users\T x\Desktop\MultiShop\MultiShop\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\T x\Desktop\MultiShop\MultiShop\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\T x\Desktop\MultiShop\MultiShop\bin\Debug\net6.0\FluentValidation.dll
-C:\Users\T x\Desktop\MultiShop\MultiShop\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\T x\Desktop\MultiShop\MultiShop\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\T x\Desktop\MultiShop\MultiShop\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\T x\Desktop\MultiShop\MultiShop\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
