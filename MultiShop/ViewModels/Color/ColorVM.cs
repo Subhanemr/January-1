@@ -1,4 +1,9 @@
 ﻿namespace MultiShop.ViewModels
 {
-    public record ColorVM(int Id, string Name, ICollection<IncludeProductVM> Products);
+    public class ColorVM
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public ICollection<IncludeProductVM> Products { get; set; }
+    }
 }

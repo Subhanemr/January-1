@@ -1,0 +1,27 @@
+﻿@model ColorVM
+
+<div class="container">
+    <h3 class="fw-bold m-3">@Model.Name Products</h3>
+    <h4 class="fw-normal mx-5 my-3">Product Count: @Model.Products.Count</h4>
+</div>
+<div class="container">
+    <div class="row row-cols-4 row-cols-md-3 g-4">
+        @foreach (IncludeProductVM product in Model.Products)
+        {
+            <div class="col">
+                <div class="card m-1 bg-primary text-white rounded-3">
+                    <img src="~/assets/images/website-images/@product.ProductImages.FirstOrDefault(pi => pi.IsPrimary == true).Url"
+                         alt="@product.Name" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Name: @product.Name</h5>
+                        <p class="card-text">Price: $@product.Price</p>
+                        <p class="card-text">SKU: @product.SKU</p>
+                        <p class="card-text">Description: @product.Description</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+</div>
+<a class="btn btn-light fw-bold fs-4" asp-action="Index" asp-controller="Color">Back</a>

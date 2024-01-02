@@ -26,7 +26,7 @@ namespace MultiShop.Areas.MultiShopAdmin.Controllers
             _mapper = mapper;
             _env = env;
         }
-
+        [Authorize(Roles = "Admin,Moderator")]
         public async Task<IActionResult> Index(int page)
         {
             if (page < 0) throw new WrongRequestException("The request sent does not exist");
@@ -43,7 +43,8 @@ namespace MultiShop.Areas.MultiShopAdmin.Controllers
             if (paginationVM.TotalPage < page) throw new NotFoundException("Your request was not found");
             return View(paginationVM);
         }
-
+        [Authorize(Roles = "Admin,Moderator")]
+        [AutoValidateAntiforgeryToken]
         public IActionResult Create()
         {
             return View();
