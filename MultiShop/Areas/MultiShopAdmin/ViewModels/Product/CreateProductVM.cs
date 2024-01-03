@@ -24,9 +24,9 @@ namespace MultiShop.Areas.MultiShopAdmin.ViewModels
         [Required(ErrorMessage = "Category must be entered mutled")]
         [Range(1, int.MaxValue, ErrorMessage = "Category must be greater than 0 ")]
         public int? CategoryId { get; set; }
-        public List<IncludeCategoryVM>? Categories { get; set; }
-        public List<IncludeSizeVM>? Sizes { get; set; }
-        public List<IncludeColorVM>? Colors { get; set; }
+        public ICollection<IncludeCategoryVM>? Categories { get; set; }
+        public ICollection<IncludeSizeVM>? Sizes { get; set; }
+        public ICollection<IncludeColorVM>? Colors { get; set; }
         public List<int> ColorIds { get; set; }
         public List<int> SizeIds { get; set; }
         [Required(ErrorMessage = "Image must be uploaded")]

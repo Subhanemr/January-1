@@ -155,7 +155,7 @@ namespace MultiShop.Controllers
             AppUser appUser = await _userManager.FindByNameAsync(User.Identity.Name);
             if (appUser == null) return View(editUserVM);
 
-            appUser = _mapper.Map<AppUser>(editUserVM);
+            _mapper.Map(editUserVM, appUser);
 
             if (editUserVM.Photo != null)
             {
@@ -171,7 +171,8 @@ namespace MultiShop.Controllers
                     return View(editUserVM);
                 }
                 string fileName = await editUserVM.Photo.CreateFileAsync(_env.WebRootPath, "img");
-                appUser.Img.DeleteFileAsync(_env.WebRootPath, "img");
+                if (!appUser.Img.Contains("default-profile.png"))
+                    appUser.Img.DeleteFileAsync(_env.WebRootPath, "img");
                 appUser.Img = fileName;
             }
 

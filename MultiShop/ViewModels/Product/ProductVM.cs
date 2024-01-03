@@ -11,10 +11,10 @@ namespace MultiShop.ViewModels
         public int OrderId { get; set; }
         public string SKU { get; set; }
         public string? Description { get; set; }
-        public int CategoryId { get; set; }
-        public IncludeCategoryVM Category { get; set; }
-        public ICollection<ProductImages> ProductImages { get; set; }
-        public ICollection<IncludeColorVM> Colors { get; set; }
-        public ICollection<IncludeSizeVM> Sizes { get; set; }
+        public int? CategoryId { get; set; }
+        public IncludeCategoryVM? Category { get; set; }
+        public ICollection<ProductImages>? ProductImages { get; set; }
+        public List<IncludeColorVM>? Colors { get; set; }
+        public List<IncludeSizeVM>? Sizes { get; set; }
     }
 }

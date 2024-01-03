@@ -1,0 +1,45 @@
+﻿@model ProductVM
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-3 m-1 w-50">
+
+        <div class="col">
+            <div class="card">
+                <p class="card-text fw-bold m-2">Main Image</p>
+                <img src="~/img//@Model.ProductImages.FirstOrDefault(p => p.IsPrimary == true).Url" class="img-fluid rounded-start" alt="@Model.Name">
+            </div>
+        </div>
+        @foreach (ProductImages productImage in Model.ProductImages.Where(p => p.IsPrimary == null))
+        {
+            <div class="col">
+                <div class="card ">
+                    <p class="card-text fw-bold m-2">Other Images</p>
+                    <img src="~/img//@productImage.Url" class="img-fluid rounded-start" alt="@Model.Name">
+                </div>
+            </div>
+        }
+    </div>
+    <div class="card-body m-2">
+        <h5 class="card-title">Name: @Model.Name</h5>
+        <p class="card-text">SKU: @Model.SKU</p>
+        <p class="card-text">Description: @Model.Description</p>
+        <p class="card-text">Category: @Model.Category.Name</p>
+        <p class="card-text">
+            Colors: @foreach (IncludeColorVM productColor in Model.Colors)
+            {
+                @productColor.Name
+
+                @(productColor != Model.Colors[Model.Colors.Count - 1] ? ", " : "")
+            }
+        </p>
+        <p class="card-text">
+            Sizes: @foreach (IncludeSizeVM productSize in Model.Sizes)
+            {
+                @productSize.Name
+
+                @(productSize != Model.Sizes[Model.Sizes.Count - 1] ? ", " : "")
+            }
+        </p>
+    </div>
+</div>
+<a class="btn btn-light fw-bold fs-4" asp-action="Index" asp-controller="Product">Back</a>

@@ -1,6 +1,7 @@
 ﻿@model LoginVM
 
 <div class="container">
+    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
     <form method="post">
         <div class="form-group m-2">
             <label asp-for="UserNameOrEmail">Email or Username</label>

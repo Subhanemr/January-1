@@ -16,7 +16,7 @@ namespace MultiShop.Areas.MultiShopAdmin.ViewModels
         
         [Required(ErrorMessage = "Order must be entered mutled")]
         [Range(1, int.MaxValue, ErrorMessage = "Order must be greater than 0 ")]
-        public int CountId { get; set; }
+        public int OrderId { get; set; }
         
         [Required(ErrorMessage = "SKU must be entered mutled")]
         public string SKU { get; set; }
@@ -28,14 +28,14 @@ namespace MultiShop.Areas.MultiShopAdmin.ViewModels
         [Required(ErrorMessage = "Category must be entered mutled")]
         [Range(1, int.MaxValue, ErrorMessage = "Category must be greater than 0 ")]
         public int? CategoryId { get; set; }
-        public List<IncludeCategoryVM>? Categories { get; set; }
-        public List<IncludeSizeVM>? Sizes { get; set; }
-        public List<IncludeColorVM>? Colors { get; set; }
-        public List<int?> ColorIds { get; set; }
-        public List<int?> SizeIds { get; set; }
+        public ICollection<IncludeCategoryVM>? Categories { get; set; }
+        public ICollection<IncludeSizeVM>? Sizes { get; set; }
+        public ICollection<IncludeColorVM>? Colors { get; set; }
+        public ICollection<int?> ColorIds { get; set; }
+        public ICollection<int?> SizeIds { get; set; }
         public IFormFile? MainPhoto { get; set; }
-        public List<IFormFile>? Photos { get; set; }
-        public List<ProductImages>? ProductImages { get; set; }
+        public ICollection<IFormFile>? Photos { get; set; }
+        public ICollection<ProductImages>? ProductImages { get; set; }
         public List<int>? ImageIds { get; set; }
     }
 }

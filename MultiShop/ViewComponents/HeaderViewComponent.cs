@@ -35,7 +35,7 @@ namespace MultiShop.ViewComponents
                     .ThenInclude(p => p.Product)
                     .ThenInclude(p => p.ProductImages.Where(pi => pi.IsPrimary == true))
                     .FirstOrDefaultAsync(u => u.Id == _http.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
-                foreach (BasketItem item in user.BasketItems)
+                foreach (BasketItem item in user.BasketItems ?? new List<BasketItem>())
                 {
                     cartVM.Add(new CartItemVM
                     {
@@ -57,7 +57,7 @@ namespace MultiShop.ViewComponents
                         .ThenInclude(p => p.Product)
                         .ThenInclude(p => p.ProductImages.Where(pi => pi.IsPrimary == true))
                         .FirstOrDefaultAsync(u => u.Id == _http.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
-                    foreach (BasketItem item in user.BasketItems)
+                    foreach (BasketItem item in user.BasketItems ?? new List<BasketItem>())
                     {
                         cartVM.Add(new CartItemVM
                         {

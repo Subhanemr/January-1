@@ -8,7 +8,7 @@ namespace MultiShop.Models
         public string Surname { get; set; } = null!;
         public string Img { get; set; } = "default-profile.png";
         public ICollection<BasketItem>? BasketItems { get; set; }
-        public ICollection<Order> Orders { get; set; } = null!;
+        public ICollection<Order>? Orders { get; set; }
 
     }
 }
