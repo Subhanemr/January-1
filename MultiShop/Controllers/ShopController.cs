@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MultiShop.DAL;
@@ -24,7 +23,7 @@ namespace MultiShop.Controllers
         {
             if (page < 0) throw new WrongRequestException("The request sent does not exist");
             double count = await _context.Products.CountAsync();
-            IQueryable<Product> queryable = _context.Products.Skip(page * 4).Take(4)
+            IQueryable<Product> queryable = _context.Products
                 .Include(pi => pi.ProductImages.Where(a => a.IsPrimary != null)).AsQueryable();
             switch (order)
             {
@@ -47,12 +46,13 @@ namespace MultiShop.Controllers
             }
             if (categoryId != null)
             {
+                count = _context.Products.Where(p => p.CategoryId == categoryId).Count();
                 queryable = queryable.Where(p => p.CategoryId == categoryId);
             }
             ShopVM shopVM = new ShopVM
             {
                 Categories = _mapper.Map<ICollection<CategoryVM>>(await _context.Categories.Include(c => c.Products).ToListAsync()),
-                Products = _mapper.Map<ICollection<ProductVM>>(await queryable.ToListAsync()),
+                Products = _mapper.Map<ICollection<ProductVM>>(await queryable.Skip(page * 4).Take(4).ToListAsync()),
                 Order = order,
                 Search = search,
                 CategoryId = categoryId,
