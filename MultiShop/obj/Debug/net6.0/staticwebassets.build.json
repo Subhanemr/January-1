@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3DTEAEHXR1hNL/9Y4ST1MSMx7gQpttUyLN3ct7ystEY=",
+  "Hash": "DSqZhiUmWwVS9gMuNQ+nYAh44OPP7EwV+M8qEMjIsIE=",
   "Source": "MultiShop",
   "BasePath": "_content/MultiShop",
   "Mode": "Default",
@@ -2038,6 +2038,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\65c09cf8-7cf8-4713-9724-81afa531ba84.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\68377d07-5c83-4aa0-96d3-511a582253b2.jpg",
+      "SourceId": "MultiShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\",
+      "BasePath": "_content/MultiShop",
+      "RelativePath": "img/68377d07-5c83-4aa0-96d3-511a582253b2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\68377d07-5c83-4aa0-96d3-511a582253b2.jpg"
     },
     {
       "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\68c59ed4-79dc-4b2f-b16c-060abad39e29.jpg",

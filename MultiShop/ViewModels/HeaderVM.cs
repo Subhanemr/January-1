@@ -6,6 +6,7 @@ namespace MultiShop.ViewModels
     {
         public Dictionary<string, string> Settings { get; set; }
         public ICollection<CartItemVM> Items { get; set; }
+        public ICollection<CategoryVM> Categories { get; set; }
         public AppUser? User { get; set; }
     }
 }

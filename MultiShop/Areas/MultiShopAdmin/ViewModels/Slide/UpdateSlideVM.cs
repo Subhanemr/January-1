@@ -16,6 +16,9 @@ namespace MultiShop.Areas.MultiShopAdmin.ViewModels
         [MaxLength(20, ErrorMessage = "It should not exceed 20 characters")]
         public string ButtonText { get; set; }
 
+        [Required(ErrorMessage = "OrderId must be entered mutled")]
+        public int OrderId { get; set; }
+
         public string ImgUrl { get; set; }
 
         public IFormFile? Photo { get; set; }

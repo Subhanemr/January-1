@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MultiShop.DAL;
@@ -14,18 +15,21 @@ namespace MultiShop.ViewComponents
         private readonly AppDbContext _context;
         private readonly IHttpContextAccessor _http;
         private readonly UserManager<AppUser> _userManager;
+        private readonly IMapper _mapper;
 
-        public HeaderViewComponent(AppDbContext context, IHttpContextAccessor http, UserManager<AppUser> userManager)
+        public HeaderViewComponent(AppDbContext context, IHttpContextAccessor http, UserManager<AppUser> userManager, IMapper mapper)
         {
             _context = context;
             _http = http;
             _userManager = userManager;
+            _mapper = mapper;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
             Dictionary<string, string> keyValuePairs = await _context.Settings.ToDictionaryAsync(p => p.Key, p => p.Value);
-
+            ICollection<Category> categories = await _context.Categories.Where(c => c.Products.Count > 0).ToListAsync();
+            ICollection<CategoryVM> vMs = _mapper.Map<ICollection<CategoryVM>>(categories);
 
             List<CartItemVM> cartVM = new List<CartItemVM>();
             if (Request.Path.StartsWithSegments("/Account/MyOrders"))
@@ -106,7 +110,7 @@ namespace MultiShop.ViewComponents
                 appUser = await _userManager.FindByNameAsync(User.Identity.Name);
             }
 
-            HeaderVM headerVM = new HeaderVM { Settings = keyValuePairs, Items = cartVM, User = appUser };
+            HeaderVM headerVM = new HeaderVM { Settings = keyValuePairs, Items = cartVM, User = appUser, Categories = vMs };
 
             return View(headerVM);
         }

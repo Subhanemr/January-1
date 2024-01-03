@@ -24,16 +24,16 @@ namespace MultiShop.Controllers
             ICollection<Product> products = await _context.Products
                 .Include(p => p.ProductImages.Where(pi => pi.IsPrimary != null)).OrderByDescending(s => s.OrderId).Take(8)
                 .ToListAsync();
-
             ICollection<Settings> settings = await _context.Settings.ToListAsync();
-            
-            ICollection<Slide> slides = await _context.Slides.OrderBy(s => s.Id).Take(3).ToListAsync();
+            ICollection<Slide> slides = await _context.Slides.ToListAsync();
+            ICollection<Category> categories = await _context.Categories.Where(c => c.Products.Count>0).ToListAsync();
 
+            ICollection<CategoryVM> categoriesvMs = _mapper.Map<ICollection<CategoryVM>>(categories);
             ICollection<ProductVM> productVMs = _mapper.Map<ICollection<ProductVM>>(products);
             ICollection<SlideVM> slideVMs = _mapper.Map<ICollection<SlideVM>>(slides);
             ICollection<SettingsVM> settingsVMs = _mapper.Map<ICollection<SettingsVM>>(settings);
 
-            HomeVM vm = new HomeVM { Slides = slideVMs, Products = productVMs, Settings = settingsVMs };
+            HomeVM vm = new HomeVM { Slides = slideVMs, Products = productVMs, Settings = settingsVMs, Categories = categoriesvMs };
 
             return View(vm);
         }
