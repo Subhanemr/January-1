@@ -125,7 +125,9 @@ namespace MultiShop.Areas.MultiShopAdmin.Controllers
                 }
                 existed.Img = await update.Photo.CreateFileAsync(_env.WebRootPath, "img");
             }
-            existed.Name = update.Name;
+            _mapper.Map(update, existed);
+
+            _context.Categories.Update(existed);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

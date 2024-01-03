@@ -393,12 +393,48 @@
       "PackagePath": "staticwebassets\\css\\style.min.css"
     },
     {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\02c57aef-eed7-4b21-8bda-b2c3618cbf54.png",
+      "PackagePath": "staticwebassets\\img\\02c57aef-eed7-4b21-8bda-b2c3618cbf54.png"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\2998e247-aaa7-4777-9572-ca40d7fc6638.jpg",
+      "PackagePath": "staticwebassets\\img\\2998e247-aaa7-4777-9572-ca40d7fc6638.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\33cdc86d-71b5-457c-8b4b-7429da497bf1.jpg",
+      "PackagePath": "staticwebassets\\img\\33cdc86d-71b5-457c-8b4b-7429da497bf1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\34b3d577-af82-4755-b95c-15f77114d6b2.jpg",
+      "PackagePath": "staticwebassets\\img\\34b3d577-af82-4755-b95c-15f77114d6b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\406c8209-33f2-4d30-8ea9-8b7c5a938199.jpg",
+      "PackagePath": "staticwebassets\\img\\406c8209-33f2-4d30-8ea9-8b7c5a938199.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\5901e323-1f63-4bc5-8692-3ba5c6ba6817.jpg",
+      "PackagePath": "staticwebassets\\img\\5901e323-1f63-4bc5-8692-3ba5c6ba6817.jpg"
+    },
+    {
       "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\628a27ad-57bd-460a-9a14-d890f84cb81b.jpg",
       "PackagePath": "staticwebassets\\img\\628a27ad-57bd-460a-9a14-d890f84cb81b.jpg"
     },
     {
       "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\Exception.png",
       "PackagePath": "staticwebassets\\img\\Exception.png"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\a7b8a9ee-c10f-4440-bb75-b7fdfc2e3830.jpg",
+      "PackagePath": "staticwebassets\\img\\a7b8a9ee-c10f-4440-bb75-b7fdfc2e3830.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\af4fb2e6-e09e-423a-88f1-22324c736cec.jpg",
+      "PackagePath": "staticwebassets\\img\\af4fb2e6-e09e-423a-88f1-22324c736cec.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\bda8d65b-3db8-410a-b361-1b9434d8309b.jpg",
+      "PackagePath": "staticwebassets\\img\\bda8d65b-3db8-410a-b361-1b9434d8309b.jpg"
     },
     {
       "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\carousel-1.jpg",
@@ -429,8 +465,16 @@
       "PackagePath": "staticwebassets\\img\\cat-4.jpg"
     },
     {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\d44f85f4-7598-4680-b37d-79f564a937df.jpg",
+      "PackagePath": "staticwebassets\\img\\d44f85f4-7598-4680-b37d-79f564a937df.jpg"
+    },
+    {
       "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\default-profile.png",
       "PackagePath": "staticwebassets\\img\\default-profile.png"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\fd536cfc-7d0d-404f-b7f2-30042b0b4bbe.jpg",
+      "PackagePath": "staticwebassets\\img\\fd536cfc-7d0d-404f-b7f2-30042b0b4bbe.jpg"
     },
     {
       "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\offer-1.jpg",

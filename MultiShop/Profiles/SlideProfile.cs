@@ -10,7 +10,7 @@ namespace MultiShop.Profiles
         public SlideProfile()
         {
             CreateMap<Slide, CreateSlideVM>().ReverseMap();
-            CreateMap<Slide, UpdateSlideVM>().ReverseMap();
+            CreateMap<UpdateSlideVM, Slide>().ReverseMap();
             CreateMap<Slide, SlideVM>().ReverseMap();
 
         }

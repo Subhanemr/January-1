@@ -102,8 +102,8 @@ namespace MultiShop.Areas.MultiShopAdmin.Controllers
                 return View(update);
             }
 
-            settings.Key = update.Key;
-            settings.Value = update.Value;
+            _mapper.Map(update, settings);
+            _context.Settings.Update(settings);
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

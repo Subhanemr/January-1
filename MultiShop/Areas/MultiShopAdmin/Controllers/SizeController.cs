@@ -30,14 +30,13 @@ namespace MultiShop.Areas.MultiShopAdmin.Controllers
         {
             if (page < 0) throw new WrongRequestException("The request sent does not exist");
             double count = await _context.Sizes.CountAsync();
-            ICollection<Size> sizes = await _context.Sizes.Skip(page * 3).Take(3)
-                .Include(c => c.ProductSizes).ToListAsync();
+            ICollection<Size> sizes = await _context.Sizes.Skip(page * 4).Take(4).Include(c => c.ProductSizes).ToListAsync();
             ICollection<SizeVM> vMs = _mapper.Map<ICollection<SizeVM>>(sizes);
 
             PaginationVM<SizeVM> paginationVM = new PaginationVM<SizeVM>
             {
                 CurrentPage = page + 1,
-                TotalPage = Math.Ceiling(count / 3),
+                TotalPage = Math.Ceiling(count / 4),
                 Items = vMs
             };
             if (paginationVM.TotalPage < page) throw new NotFoundException("Your request was not found");
@@ -104,7 +103,9 @@ namespace MultiShop.Areas.MultiShopAdmin.Controllers
                 return View();
             }
 
-            existed.Name = update.Name;
+            _mapper.Map(update, existed);
+            _context.Sizes.Update(existed);
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

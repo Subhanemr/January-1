@@ -29,14 +29,14 @@ namespace MultiShop.Areas.MultiShopAdmin.Controllers
         {
             if (page < 0) throw new WrongRequestException("The request sent does not exist");
             double count = await _context.Colors.CountAsync();
-            ICollection<Color> colors = await _context.Colors.Skip(page * 3).Take(3)
+            ICollection<Color> colors = await _context.Colors.Skip(page * 4).Take(4)
                 .Include(c => c.ProductColors).ToListAsync();
             ICollection<ColorVM> vMs = _mapper.Map<ICollection<ColorVM>>(colors);
 
             PaginationVM<ColorVM> paginationVM = new PaginationVM<ColorVM>
             {
                 CurrentPage = page + 1,
-                TotalPage = Math.Ceiling(count / 3),
+                TotalPage = Math.Ceiling(count / 4),
                 Items = vMs
             };
             if (paginationVM.TotalPage < page) throw new NotFoundException("Your request was not found");
@@ -63,7 +63,7 @@ namespace MultiShop.Areas.MultiShopAdmin.Controllers
 
             if (result)
             {
-                ModelState.AddModelError("Color.Name", "A Color with this name already exists");
+                ModelState.AddModelError("Name", "A Color with this name already exists");
                 return View(create);
             }
             Color color = _mapper.Map<Color>(create);
@@ -103,7 +103,8 @@ namespace MultiShop.Areas.MultiShopAdmin.Controllers
                 return View(update);
             }
 
-            existed.Name = update.Name;
+            _mapper.Map(update, existed);
+            _context.Colors.Update(existed);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
