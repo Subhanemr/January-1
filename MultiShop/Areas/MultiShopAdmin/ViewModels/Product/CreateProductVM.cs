@@ -21,6 +21,12 @@ namespace MultiShop.Areas.MultiShopAdmin.ViewModels
         [MinLength(1, ErrorMessage = "It should not exceed 1-100 characters")]
         [MaxLength(100, ErrorMessage = "It should not exceed 100 characters")]
         public string Description { get; set; }
+
+        public string? FaceLink { get; set; }
+        public string? TwitterLink { get; set; }
+        public string? LinkedLink { get; set; }
+        public string? PinterestLink { get; set; }
+
         [Required(ErrorMessage = "Category must be entered mutled")]
         [Range(1, int.MaxValue, ErrorMessage = "Category must be greater than 0 ")]
         public int? CategoryId { get; set; }

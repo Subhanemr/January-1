@@ -23,7 +23,12 @@
         <h5 class="card-title">Name: @Model.Name</h5>
         <p class="card-text">SKU: @Model.SKU</p>
         <p class="card-text">Description: @Model.Description</p>
+        <p class="card-text">Pinterest: <a>@Model.PinterestLink@(Model.PinterestLink != null ? "" : "N/A")</a></p>
+        <p class="card-text">Facebook: <a>@Model.FaceLink@(Model.FaceLink != null ? "" : "N/A")</a></p>
+        <p class="card-text">Twitter: <a>@Model.TwitterLink@(Model.TwitterLink != null ? "" : "N/A")</a></p>
+        <p class="card-text">Linked-In: <a>@Model.LinkedLink@(Model.LinkedLink != null ? "" : "N/A")</a></p>
         <p class="card-text">Category: @Model.Category.Name</p>
+
         <p class="card-text">
             Colors: @foreach (IncludeColorVM productColor in Model.Colors)
             {

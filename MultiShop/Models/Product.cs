@@ -9,6 +9,11 @@ namespace MultiShop.Models
         public string SKU { get; set; } = null!;
         public string? Description { get; set; }
 
+        public string? FaceLink { get; set; }
+        public string? TwitterLink { get; set; }
+        public string? LinkedLink { get; set; }
+        public string? PinterestLink { get; set; }
+
         public int CategoryId { get; set; }
         public Category Category { get; set; } = null!;
         public ICollection<ProductImages> ProductImages { get; set; } = null!;
