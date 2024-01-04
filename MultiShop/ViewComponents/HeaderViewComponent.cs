@@ -31,7 +31,8 @@ namespace MultiShop.ViewComponents
             ICollection<Category> categories = await _context.Categories.Where(c => c.Products.Count > 0).ToListAsync();
             ICollection<CategoryVM> vMs = _mapper.Map<ICollection<CategoryVM>>(categories);
 
-            List<CartItemVM> cartVM = new List<CartItemVM>();
+            ICollection<CartItemVM> cartVM = new List<CartItemVM>();
+            ICollection<WishListItemVM> wishLists = new List<WishListItemVM>();
             if (Request.Path.StartsWithSegments("/Account/MyOrders"))
             {
                 AppUser user = await _userManager.Users
@@ -76,9 +77,9 @@ namespace MultiShop.ViewComponents
                 }
                 else
                 {
-                    if (_http.HttpContext.Request.Cookies["Basket"] is not null)
+                    if (_http.HttpContext.Request.Cookies["BasketMultiShop"] is not null)
                     {
-                        ICollection<CartCookieItemVM> cart = JsonConvert.DeserializeObject<ICollection<CartCookieItemVM>>(_http.HttpContext.Request.Cookies["Basket"]);
+                        ICollection<CartCookieItemVM> cart = JsonConvert.DeserializeObject<ICollection<CartCookieItemVM>>(_http.HttpContext.Request.Cookies["BasketMultiShop"]);
                         foreach (CartCookieItemVM cartCookieItemVM in cart)
                         {
                             Product product = await _context.Products.Include(p => p.ProductImages.Where(pi => pi.IsPrimary == true)).FirstOrDefaultAsync(p => p.Id == cartCookieItemVM.Id);
@@ -101,16 +102,56 @@ namespace MultiShop.ViewComponents
 
                 }
             }
+            if (User.Identity.IsAuthenticated)
+            {
+                AppUser appUser = await _userManager.Users
+                    .Include(b => b.WishListItems)
+                    .ThenInclude(p => p.Product)
+                    .ThenInclude(pi => pi.ProductImages.Where(pi => pi.IsPrimary == true))
+                    .FirstOrDefaultAsync(u => u.Id == _http.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
+                foreach (WishListItem item in appUser.WishListItems)
+                {
+                    wishLists.Add(new WishListItemVM
+                    {
+                        Id = item.ProductId,
+                        Name = item.Product.Name,
+                        Price = item.Product.Price,
+                        Image = item.Product.ProductImages.FirstOrDefault()?.Url
+                    });
+                }
+            }
+            else
+            {
+                if (Request.Cookies["WishListMultiShop"] is not null)
+                {
+                    ICollection<WishListCookieItemVM> wishes = JsonConvert.DeserializeObject<ICollection<WishListCookieItemVM>>(Request.Cookies["WishListMultiShop"]);
+                    foreach (WishListCookieItemVM wishListCookieItem in wishes)
+                    {
+                        Product product = await _context.Products.Include(p => p.ProductImages.Where(pi => pi.IsPrimary == true)).FirstOrDefaultAsync(p => p.Id == wishListCookieItem.Id);
+                        if (product is not null)
+                        {
+                            WishListItemVM wish = new WishListItemVM
+                            {
+                                Id = wishListCookieItem.Id,
+                                Name = product.Name,
+                                Price = product.Price,
+                                Image = product.ProductImages.FirstOrDefault().Url
+                            };
+                            wishLists.Add(wish);
+                        }
+                    }
+                }
 
+            }
 
-            AppUser appUser = new AppUser();
+            AppUser app = new AppUser();
 
             if (User.Identity.IsAuthenticated)
             {
-                appUser = await _userManager.FindByNameAsync(User.Identity.Name);
+                app = await _userManager.FindByNameAsync(User.Identity.Name);
             }
 
-            HeaderVM headerVM = new HeaderVM { Settings = keyValuePairs, Items = cartVM, User = appUser, Categories = vMs };
+            HeaderVM headerVM = new HeaderVM { Settings = keyValuePairs, Items = cartVM, User = app, Categories = vMs, WishListItems = wishLists };
 
             return View(headerVM);
         }

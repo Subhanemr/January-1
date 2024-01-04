@@ -21,6 +21,7 @@ namespace MultiShop.DAL
         public DbSet<Order> Orders { get; set; }
         public DbSet<Slide> Slides { get; set; }
         public DbSet<Settings> Settings { get; set; }
+        public DbSet<WishListItem> WishListItems { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

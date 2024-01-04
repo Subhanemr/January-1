@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DSqZhiUmWwVS9gMuNQ+nYAh44OPP7EwV+M8qEMjIsIE=",
+  "Hash": "bd93XkGVE7Xoxpl3uYiT7Jhfj44/e8cbDCdowIDGxts=",
   "Source": "MultiShop",
   "BasePath": "_content/MultiShop",
   "Mode": "Default",
@@ -2652,12 +2652,12 @@
       "OriginalItemSpec": "wwwroot\\img\\ec163384-ecb6-46f7-a02a-a42eb481b252.jpg"
     },
     {
-      "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\Exception.png",
+      "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\Exception.jpg",
       "SourceId": "MultiShop",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\",
       "BasePath": "_content/MultiShop",
-      "RelativePath": "img/Exception.png",
+      "RelativePath": "img/Exception.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2666,7 +2666,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\Exception.png"
+      "OriginalItemSpec": "wwwroot\\img\\Exception.jpg"
     },
     {
       "Identity": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\f08b92b6-7c66-40b9-85e4-d8d75b809380.jpg",
