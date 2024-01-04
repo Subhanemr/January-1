@@ -35,7 +35,9 @@
                     {
                         total += cartItem.SubTotal;
                         <tr>
-                            <td class="align-middle"><img src="~/img//@cartItem.Image" alt="@cartItem.Name" style="width: 50px;"> Product Name</td>
+                            <td class="align-middle"><img src="~/img//@cartItem.Image" alt="@cartItem.Name" style="width: 50px;">
+                                <a asp-action="Detail" asp-controller="ShopDetail" asp-route-id="@cartItem.Id">@cartItem.Name</a>
+                            </td>
                             <td class="align-middle">$@cartItem.Price</td>
                             <td class="align-middle">
                                 <div class="input-group quantity mx-auto" style="width: 100px;">

@@ -140,10 +140,21 @@
                             @Html.Raw(@Model.Settings["WishListIcon"])
                             <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">@Model.WishListItems.Count</span>
                         </a>
-                        <a asp-action="Index" asp-controller="Cart" class="btn px-0 ml-3">
-                            @Html.Raw(@Model.Settings["ShopIcon"])
-                            <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">@Model.Items.Count</span>
-                        </a>
+
+                        @if (Context.Request.Path.StartsWithSegments("/Account/MyOrders"))
+                        {
+                            <a asp-action="MyOrders" asp-controller="Account" class="btn px-0 ml-3 text-warning">
+                                @Html.Raw(@Model.Settings["OrderIcon"])
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">@Model.Items.Count</span>
+                            </a>
+                        }
+                        else
+                        {
+                            <a asp-action="Index" asp-controller="Cart" class="btn px-0 ml-3 text-warning">
+                                @Html.Raw(@Model.Settings["ShopIcon"])
+                                <span class="badge text-secondary border border-secondary rounded-circle" style="padding-bottom: 2px;">@Model.Items.Count</span>
+                            </a>
+                        }
                     </div>
                 </div>
             </nav>
