@@ -501,10 +501,6 @@
       "PackagePath": "staticwebassets\\img\\79aca891-07f0-4893-9169-6d1a1612479b.jpg"
     },
     {
-      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\7bedf282-c73b-4c39-af82-68d3577ebae5.jpg",
-      "PackagePath": "staticwebassets\\img\\7bedf282-c73b-4c39-af82-68d3577ebae5.jpg"
-    },
-    {
       "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\7ca430d7-bef3-431a-85af-abe4afa2993a.jpg",
       "PackagePath": "staticwebassets\\img\\7ca430d7-bef3-431a-85af-abe4afa2993a.jpg"
     },
@@ -603,6 +599,10 @@
     {
       "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\cat-4.jpg",
       "PackagePath": "staticwebassets\\img\\cat-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\ce17e1cf-d520-4770-a10f-bc3eb1868120.jpg",
+      "PackagePath": "staticwebassets\\img\\ce17e1cf-d520-4770-a10f-bc3eb1868120.jpg"
     },
     {
       "Id": "C:\\Users\\T x\\Desktop\\MultiShop\\MultiShop\\wwwroot\\img\\d44f85f4-7598-4680-b37d-79f564a937df.jpg",
