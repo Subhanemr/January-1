@@ -125,7 +125,15 @@ namespace MultiShop.Areas.MultiShopAdmin.Controllers
                 }
                 existed.Img = await update.Photo.CreateFileAsync(_env.WebRootPath, "img");
             }
-            _mapper.Map(update, existed);
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<UpdateCategoryVM, Category>()
+                    .ForMember(dest => dest.Img, opt => opt.Ignore());
+            });
+
+            var mapper = config.CreateMapper();
+
+            mapper.Map(update, existed);
 
             _context.Categories.Update(existed);
             await _context.SaveChangesAsync();

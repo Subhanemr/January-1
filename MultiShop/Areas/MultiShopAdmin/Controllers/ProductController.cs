@@ -342,8 +342,6 @@ namespace MultiShop.Areas.MultiShopAdmin.Controllers
                 existed.ProductImages.Remove(image);
             }
 
-            if (update.ImageIds is null) update.ImageIds = new List<int>();
-
             TempData["Message"] = "";
 
             if (update.Photos is not null)
